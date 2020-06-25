@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-25T13:06:12 IST" name="Suite" finished-at="2020-06-25T13:10:05 IST" duration-ms="232874">
+    <groups>
+    </groups>
+    <test started-at="2020-06-25T13:06:12 IST" name="Test" finished-at="2020-06-25T13:10:05 IST" duration-ms="232874">
+      <class name="com.HealthyfiMe.test.TrackFood_Test">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:06:12 IST" name="login" finished-at="2020-06-25T13:07:57 IST" duration-ms="105237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:07:57 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:08:40 IST" duration-ms="42919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BREAKFAST]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackBreakfast -->
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:08:40 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:09:23 IST" duration-ms="42297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LUNCH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackBreakfast -->
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:09:23 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:10:05 IST" duration-ms="41785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DINNER]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackBreakfast -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:10:05 IST" name="quit" finished-at="2020-06-25T13:10:05 IST" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.HealthyfiMe.test.TrackFood_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
