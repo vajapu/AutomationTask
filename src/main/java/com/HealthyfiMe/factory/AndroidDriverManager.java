@@ -25,6 +25,7 @@ public class AndroidDriverManager extends DriverManager {
 		capabilities.setCapability("automationName", "UiAutomator2");
 		capabilities.setCapability("appPackage", "com.healthifyme.basic");
 		capabilities.setCapability("appActivity", "com.healthifyme.basic.activities.LaunchActivity");
+		capabilities.setCapability("noReset", true);
 //		capabilities.setCapability("app", app.getAbsolutePath());
 		try {
 			this.driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);

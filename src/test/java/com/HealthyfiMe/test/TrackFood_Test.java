@@ -22,6 +22,7 @@ import com.HealthyfiMe.page.TrackFood;
 import com.HealthyfiMe.page.TrackFood.MEALTYPE;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -38,8 +39,8 @@ public class TrackFood_Test {
 
 	@BeforeClass
 	public void login() {
-		String reportPath="";
-		if(System.getProperty("os.name").contains("Windows"))
+		String reportPath = "";
+		if (System.getProperty("os.name").contains("Windows"))
 			reportPath = System.getProperty("user.dir") + "\\ExtentReport\\ExtentReportResults.html";
 		else
 			reportPath = System.getProperty("user.dir") + "/ExtentReport/ExtentReportResults.html";
@@ -48,18 +49,20 @@ public class TrackFood_Test {
 		driverManager = DriverManagerFactory.getDriverManager(DriverType.Android);
 		driver = driverManager.getDriver();
 		trackFood = new TrackFood(driver);
-		BaseFunctions.test=test;
-		termsAndCondition = new TermsAndCondition(driver);
-		termsAndCondition.agreeTermsAndCondition();
-		signUp = new SignUp(driver);
-		signUp.closeScreen();
-		getStarted = new GetStarted(driver);
-		getStarted.verifyGetStartedPage();
-		getStarted.clickOnLogin();
-		logIn = new LogIn(driver);
-		logIn.signInWithEmail();
-		logIn.enterEmailAndPassword("hme-testpr435@example.com", "password");
-		logIn.clickOnLogin();
+		BaseFunctions.test = test;
+		if (!trackFood.isCalEatenDisplayed()) {
+			termsAndCondition = new TermsAndCondition(driver);
+			termsAndCondition.agreeTermsAndCondition();
+			signUp = new SignUp(driver);
+			signUp.closeScreen();
+			getStarted = new GetStarted(driver);
+			getStarted.verifyGetStartedPage();
+			getStarted.clickOnLogin();
+			logIn = new LogIn(driver);
+			logIn.signInWithEmail();
+			logIn.enterEmailAndPassword("hme-testpr435@example.com", "password");
+			logIn.clickOnLogin();
+		}
 		new Dashboard(driver).clickCalEaten();
 		report.endTest(test);
 		report.flush();
@@ -67,7 +70,7 @@ public class TrackFood_Test {
 
 	@Test(dataProvider = "MealTypes")
 	public void trackBreakfast(MEALTYPE type) {
-		ExtentTest test = report.startTest("track"+type);
+		ExtentTest test = report.startTest("track" + type);
 		BaseFunctions.test = test;
 		trackFood.selectMealType(type);
 		SearchFood searchFood = new SearchFood(driver);
@@ -84,7 +87,7 @@ public class TrackFood_Test {
 	private Object[][] mealTypeProvider() {
 		return new Object[][] { { MEALTYPE.BREAKFAST }, { MEALTYPE.LUNCH }, { MEALTYPE.DINNER } };
 	}
-	
+
 	@AfterClass
 	public void quit() {
 		driverManager.quitDriver();

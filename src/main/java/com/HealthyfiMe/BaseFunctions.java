@@ -38,7 +38,8 @@ public class BaseFunctions {
 			WebDriverWait wait = new WebDriverWait(driver, waitTime);
 			wait.until(ExpectedConditions.visibilityOf(element)).click();
 		} catch (Exception e) {
-			System.err.println(e);
+			test.log(LogStatus.FAIL,e);
+			test.log(LogStatus.FAIL,test.addScreenCapture(takeScreenshot("TrackedFood")));
 		}
 	}
 
@@ -48,7 +49,8 @@ public class BaseFunctions {
 			WebDriverWait wait = new WebDriverWait(driver, waitTime);
 			wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(text);
 		} catch (Exception e) {
-			System.err.println(e);
+			test.log(LogStatus.FAIL,e);
+			test.log(LogStatus.FAIL,test.addScreenCapture(takeScreenshot("TrackedFood")));
 		}
 	}
 
@@ -58,7 +60,8 @@ public class BaseFunctions {
 			WebDriverWait wait = new WebDriverWait(driver, waitTime);
 			return wait.until(ExpectedConditions.visibilityOf(element)).getText();
 		} catch (Exception e) {
-			System.err.println(e);
+			test.log(LogStatus.FAIL,e);
+			test.log(LogStatus.FAIL,test.addScreenCapture(takeScreenshot("TrackedFood")));
 		}
 		return null;
 	}

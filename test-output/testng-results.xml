@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-25T13:06:12 IST" name="Suite" finished-at="2020-06-25T13:10:05 IST" duration-ms="232874">
+  <suite started-at="2020-07-06T08:27:22 IST" name="Suite" finished-at="2020-07-06T08:30:00 IST" duration-ms="158380">
     <groups>
     </groups>
-    <test started-at="2020-06-25T13:06:12 IST" name="Test" finished-at="2020-06-25T13:10:05 IST" duration-ms="232874">
+    <test started-at="2020-07-06T08:27:22 IST" name="Test" finished-at="2020-07-06T08:30:00 IST" duration-ms="158380">
       <class name="com.HealthyfiMe.test.TrackFood_Test">
-        <test-method is-config="true" signature="login()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:06:12 IST" name="login" finished-at="2020-06-25T13:07:57 IST" duration-ms="105237" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@7f1302d6]" started-at="2020-07-06T08:27:22 IST" name="login" finished-at="2020-07-06T08:27:55 IST" duration-ms="33585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:07:57 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:08:40 IST" duration-ms="42919" status="PASS">
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@7f1302d6]" started-at="2020-07-06T08:27:55 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-07-06T08:28:39 IST" duration-ms="43467" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trackBreakfast -->
-        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:08:40 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:09:23 IST" duration-ms="42297" status="PASS">
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@7f1302d6]" started-at="2020-07-06T08:28:39 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-07-06T08:29:19 IST" duration-ms="40197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trackBreakfast -->
-        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:09:23 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-06-25T13:10:05 IST" duration-ms="41785" status="PASS">
+        <test-method signature="trackBreakfast(com.HealthyfiMe.page.TrackFood$MEALTYPE)[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@7f1302d6]" started-at="2020-07-06T08:29:19 IST" name="trackBreakfast" data-provider="MealTypes" finished-at="2020-07-06T08:29:59 IST" duration-ms="40255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trackBreakfast -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@76508ed1]" started-at="2020-06-25T13:10:05 IST" name="quit" finished-at="2020-06-25T13:10:05 IST" duration-ms="572" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.HealthyfiMe.test.TrackFood_Test@7f1302d6]" started-at="2020-07-06T08:29:59 IST" name="quit" finished-at="2020-07-06T08:30:00 IST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

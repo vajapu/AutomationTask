@@ -76,6 +76,12 @@ public class TrackFood extends BaseFunctions {
 			report(LogStatus.FAIL, "Tracked food items are not displayed");
 		}
 	}
+	
+	public boolean isCalEatenDisplayed() {
+		if (isDisplayed(calorieEaten))
+			return true;
+		return false;
+	}
 
 	public void handleRatingFlow() {
 		if (isDisplayed(rating)) {
@@ -91,25 +97,13 @@ public class TrackFood extends BaseFunctions {
 		if (isDisplayed(addIcon.get(0))) {
 			test.log(LogStatus.INFO,test.addScreenCapture(takeScreenshot("FoodLog")));
 			report(LogStatus.PASS, "Food log page is displayed");
-			switch (type) {
-			case BREAKFAST:
-				click(addIcon.get(0));
-				break;
-			case MORNING_SNACK:
-				click(addIcon.get(1));
-				break;
-			case LUNCH:
-				click(addIcon.get(2));
-				break;
-			case EVENING_SNACK:
-				click(addIcon.get(3));
-				break;
-			case DINNER:
-				click(addIcon.get(4));
-				break;
-			default:
-				break;
+			int i=0;
+			for(MobileElement ele:mealTypes) {
+				if(getText(ele).equals(getString(type)))
+					break;
+				++i;
 			}
+			click(addIcon.get(i));
 		} else {
 			test.log(LogStatus.INFO,test.addScreenCapture(takeScreenshot("FoodLog")));
 			report(LogStatus.FAIL, "Food log page is not displayed");

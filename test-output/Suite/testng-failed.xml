@@ -7,7 +7,7 @@
         <methods>
           <include name="login"/>
           <include name="quit"/>
-          <include name="trackBreakfast"/>
+          <include name="trackBreakfast" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.HealthyfiMe.test.TrackFood_Test -->
     </classes>
